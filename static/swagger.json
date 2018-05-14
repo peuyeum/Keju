@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.",
+    "description": "Tugas Mata Kuliah Web Service, membuat API untuk Peneliti dan Jurnal",
     "version": "1.0.0",
-    "title": "Swagger Petstore",
+    "title": "Indeks Peneliti dan Jurnal (Keju)",
     "termsOfService": "http://swagger.io/terms/",
     "contact": {
       "email": "apiteam@swagger.io"
@@ -13,27 +13,27 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "petstore.swagger.io",
+  "host": "keju.peuyeum.com",
   "basePath": "/v2",
   "tags": [
     {
-      "name": "pet",
-      "description": "Everything about your Pets",
+      "name": "peneliti",
+      "description": "Everything about peneliti",
       "externalDocs": {
         "description": "Find out more",
-        "url": "http://swagger.io"
+        "url": "http://peuyeum.com"
       }
     },
     {
-      "name": "store",
-      "description": "Access to Petstore orders"
+      "name": "jurnal",
+      "description": "Access to journal"
     },
     {
       "name": "user",
       "description": "Operations about user",
       "externalDocs": {
-        "description": "Find out more about our store",
-        "url": "http://swagger.io"
+        "description": "Find out more",
+        "url": "http://peuyeum.com"
       }
     }
   ],
@@ -41,12 +41,12 @@
     "http"
   ],
   "paths": {
-    "/pet": {
+    "/peneliti": {
       "post": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
-        "summary": "Add a new pet to the store",
+        "summary": "Tambah Baru Peneliti",
         "description": "",
         "operationId": "addPet",
         "consumes": [
@@ -84,9 +84,9 @@
       },
       "put": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
-        "summary": "Update an existing pet",
+        "summary": "Update an existing peneliti",
         "description": "",
         "operationId": "updatePet",
         "consumes": [
@@ -129,10 +129,10 @@
         ]
       }
     },
-    "/pet/findByStatus": {
+    "/peneliti/findByStatus": {
       "get": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
         "summary": "Finds Pets by status",
         "description": "Multiple status values can be provided with comma separated strings",
@@ -184,10 +184,10 @@
         ]
       }
     },
-    "/pet/findByTags": {
+    "/peneliti/findByTags": {
       "get": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
         "summary": "Finds Pets by tags",
         "description": "Muliple tags can be provided with comma separated strings. Use         tag1, tag2, tag3 for testing.",
@@ -234,13 +234,13 @@
         "deprecated": true
       }
     },
-    "/pet/{petId}": {
+    "/peneliti/{petId}": {
       "get": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
         "summary": "Find pet by ID",
-        "description": "Returns a single pet",
+        "description": "Returns a single peneliti",
         "operationId": "getPetById",
         "produces": [
           "application/xml",
@@ -278,7 +278,7 @@
       },
       "post": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
         "summary": "Updates a pet in the store with form data",
         "description": "",
@@ -330,7 +330,7 @@
       },
       "delete": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
         "summary": "Deletes a pet",
         "description": "",
@@ -373,10 +373,10 @@
         ]
       }
     },
-    "/pet/{petId}/uploadImage": {
+    "/peneliti/{petId}/uploadImage": {
       "post": {
         "tags": [
-          "pet"
+          "peneliti"
         ],
         "summary": "uploads an image",
         "description": "",
@@ -429,10 +429,10 @@
         ]
       }
     },
-    "/store/inventory": {
+    "/jurnal/inventory": {
       "get": {
         "tags": [
-          "store"
+          "jurnal"
         ],
         "summary": "Returns pet inventories by status",
         "description": "Returns a map of status codes to quantities",
@@ -460,10 +460,10 @@
         ]
       }
     },
-    "/store/order": {
+    "/jurnal/order": {
       "post": {
         "tags": [
-          "store"
+          "jurnal"
         ],
         "summary": "Place an order for a pet",
         "description": "",
@@ -496,10 +496,10 @@
         }
       }
     },
-    "/store/order/{orderId}": {
+    "/jurnal/order/{orderId}": {
       "get": {
         "tags": [
-          "store"
+          "jurnal"
         ],
         "summary": "Find purchase order by ID",
         "description": "For valid response try integer IDs with value >= 1 and <= 10.         Other values will generated exceptions",
@@ -537,7 +537,7 @@
       },
       "delete": {
         "tags": [
-          "store"
+          "jurnal"
         ],
         "summary": "Delete purchase order by ID",
         "description": "For valid response try integer IDs with positive integer value.         Negative or non-integer values will generate API errors",
