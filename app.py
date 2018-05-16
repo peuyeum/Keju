@@ -1,4 +1,5 @@
 from flask import Flask,request
+from scopus import Authfirst as AF
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -15,4 +16,5 @@ def login():
 	return request.form['anu']
 
 @app.route('/scopus/AUTHFIRST/<a>', methods=['GET'])
-def retrn(a):  
+def retrn(a):
+    return AF.coba(a)
