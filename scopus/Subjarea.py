@@ -1,2 +1,2 @@
-from pyscopus import
+from pyscopus import Scopus
 
