@@ -1,2 +1,2 @@
-from pyscopus im
+from pyscopus import
 
