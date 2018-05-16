@@ -1,3 +1,3 @@
 from pyscopus import Scopus
 
-app = __
+app = Scopus __
