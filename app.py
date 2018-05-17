@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/kelompok1/<a>')
+@app.route('/scopus/FIRSTAUTH/<a>', methods=['GET'])
 def house(a):
     return FA.home(a)
