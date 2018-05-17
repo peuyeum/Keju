@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/scopus/AUTHFIRST/<a>', methods=['GET'])
-def retrn(a):
-    return AUF.coba(a)
+@app.route('/scopus/AUTHFIRST/<nama>', methods=['GET'])
+def retrn(nama):
+    return AUF.cari(nama)

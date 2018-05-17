@@ -1,4 +1,5 @@
-def coba(a):
-    return a+" SUKSES"
+from pyscopus import Scopus
+def cari(nama):
+    return nama+" Bisa"
 
 #ini komentar
