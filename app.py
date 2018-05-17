@@ -1,5 +1,5 @@
 from flask import Flask,request
-from scopus import Authfirst as AUF
+from scopus import Authfirst as AUF #memberikan alias dari Autofirst dari package scopus
 app = Flask(__name__)
 
 @app.route('/<gurih>')
