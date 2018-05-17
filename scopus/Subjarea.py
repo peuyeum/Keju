@@ -1,2 +1,2 @@
 from pyscopus import Scopus
-key = '28afb89
+key = '28afb89a9
