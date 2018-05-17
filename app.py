@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/fikri/<a>')
+@app.route('/scopus/AUTHLASTNAME/<a>')
 def home(a):
     return AN.hell(a)
