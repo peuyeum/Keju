@@ -4,3 +4,4 @@ scopus = Scopus(key)
 def hell(a):
     return a+ "halo"
 def mendapatkan(b):
+    return b+"mendapatkan
