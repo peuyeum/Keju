@@ -1,3 +1,5 @@
-from pyscopus import Scopus
+#from pyscopus import Scopus
+#app = Scopus __
 
-app = Scopus __
+def hom(a):
+	return a+" Ganteng"
