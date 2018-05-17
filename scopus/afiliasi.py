@@ -3,3 +3,4 @@
 
 def hom(a):
 	return a+" Ganteng"
+	
