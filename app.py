@@ -1,4 +1,5 @@
 from flask import Flask,request
+from scopus import Subjarea as SA
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -14,4 +15,10 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/')
+@app.route('/frans/<a>')
+def house(a):
+	return SA.home(a)
+
+@app.route('/Subjarea/<b>')
+def serah(b):
+	return SA.mendapatkan(b)
