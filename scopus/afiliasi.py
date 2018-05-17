@@ -2,5 +2,5 @@
 #app = Scopus __
 
 def hom(a):
-	return a+" Ganteng"
+	return a+" Ganteng aku tuh"
 	
