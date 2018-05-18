@@ -7,3 +7,5 @@ def mendapatkan(b):
     return b+"mendapatkan"
 def Snapshot(c):
     return c+"Snapshot"
+def helloword(d):
+    return d+ "helloword"
