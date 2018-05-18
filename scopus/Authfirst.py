@@ -4,3 +4,4 @@ def cari(nama):
 
 #ini komentar
 #jangan menyerah pasti bisa
+#jangan kebanyakan komentar
