@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/scopus/AFFIL/<a>')
+@app.route('/scopus/AFFIL/<a>', methods=['GET'])
 def home(a):
 	return afl.hom(a)
