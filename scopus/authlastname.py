@@ -10,3 +10,4 @@ def Snapshot(c):
 def helloword(d):
     return d+ "helloword"
 def allo(e):
+    return e+ "allo"
