@@ -1,5 +1,6 @@
 #Import library
 from pyscopus import Scopus
+key = '1e499709c626679a80b27fc8a207ceb3'
 
 def cari(nama):
     return nama+" Bisa"  #memanggil variable nama dengan menambah value bisa
