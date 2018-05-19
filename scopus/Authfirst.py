@@ -1,7 +1,7 @@
 #Import library
 from pyscopus import Scopus
 key = '1e499709c626679a80b27fc8a207ceb3'
-scopus = 
+scopus = Scopus(key)
 
 #Test Search
 search_df = 
