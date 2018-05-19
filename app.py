@@ -16,5 +16,5 @@ def login():
 	return request.form['anu']
 
 @app.route('/scopus/AUTHLASTNAME/<namabelakang>', methods=['GET'])
-def cari(namabelakang):
+def pencarian(namabelakang):
     return AN.cari(namabelakang)
