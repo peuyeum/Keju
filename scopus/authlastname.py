@@ -12,4 +12,5 @@ def helloword(d):
 def allo(e):
     return e+ "allo"
 def hai(c):
+    return c+ "hai"
     
