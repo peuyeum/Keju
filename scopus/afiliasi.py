@@ -4,7 +4,7 @@ from pyscopus import Scopus
 #Test Pencarian
 search_df = 
 def hom(a):
-    return a+" is Found"  #memanggil variable a dengan menambah nilai/value is Found"
+    return a+"Data is Found"  #memanggil variable a dengan menambah nilai/value Data is Found"
 	
 	
 	
@@ -14,3 +14,4 @@ def hom(a):
 	
 	
 #Lanjutkan di bawah sini guys, jangan di atas
+
