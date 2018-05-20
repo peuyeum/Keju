@@ -5,6 +5,7 @@ scopus = Scopus(key)
 
 #Test Search
 search_df = scopus.search("KEY(interdisciplinary collaboration)", count=30)
+#print (seaarch_df.head(10))
 
 search_df = 
 def cari(nama):
