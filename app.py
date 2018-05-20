@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/scopus/AFFIL/<a>', methods=['GET'])
+@app.route('/scopus/AFFIL/<a>', methods=['GET']) #penggunaan method GET untuk menampilkan data dalam bentuk tag HTML
 def home(a):
 	return afl.hom(a)
