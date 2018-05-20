@@ -9,8 +9,8 @@ def Snapshot(c):
     return c+"Snapshot"
 def helloword(d):
     return d+ "helloword"
-def allo(e):
-    return e+ "allo"
+def Helli(e):
+    return e+ "helli"
 def hai(c):
     return c+ "hai"
 def yuhu(f):
