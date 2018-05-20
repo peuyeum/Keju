@@ -13,4 +13,5 @@ def allo(e):
     return e+ "allo"
 def hai(c):
     return c+ "hai"
+def hi(f):
     
