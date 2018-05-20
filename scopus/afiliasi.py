@@ -17,3 +17,5 @@ def hom(abc):
 #Lanjutkan di bawah sini guys, jangan di atas
 
 
+
+#ini udah di lanjut di bawahnya ya
