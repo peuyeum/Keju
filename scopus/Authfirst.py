@@ -9,7 +9,7 @@ search_df = scopus.search("KEY(interdisciplinary collaboration)", count=30)
 
 search_df = 
 def cari(nama):
-    return nama+" Bisa"  #memanggil variable nama dengan menambah value bisa
+    return nama+"Pasti Bisa"  #memanggil variable nama dengan menambah value pasti bisa
 
 #Test Search Author
 
