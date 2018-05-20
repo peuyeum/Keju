@@ -12,9 +12,3 @@ def cari(nama):
     return nama+"Pasti Bisa"  #memanggil variable nama dengan menambah value pasti bisa
 
 #Test Search Author
-
-
-#ini komentar lagi
-#jangan menyerah pasti bisa
-#jangan kebanyakan komentar
-
