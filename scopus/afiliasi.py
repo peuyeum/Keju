@@ -3,9 +3,10 @@ from pyscopus import Scopus
 
 #Test Pencarian
 search_df = 
-def hom(a):
-    return a+"Data is Found"  #memanggil variable a dengan menambah nilai/value Data is Found"
+def hom(abc):
+    return abc+"Data is Found"  #memanggil variable a dengan menambah nilai/value Data is Found"
 	
+
 	
 	
 
