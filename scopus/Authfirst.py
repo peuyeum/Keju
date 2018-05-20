@@ -13,7 +13,8 @@ def cari(nama):
 
 #Test Search Author
 
-#ini komentar
+
+#ini komentar lagi
 #jangan menyerah pasti bisa
 #jangan kebanyakan komentar
 
