@@ -19,3 +19,7 @@ def hom(abcd):
 
 
 #ini udah di lanjut di bawahnya ya
+
+
+
+#Masih bisa dibawahnya juga
