@@ -15,10 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/frans/<a>')
-def house(a):
-	return SA.home(a)
-
-@app.route('/Subjarea/<b>')
-def serah(b):
-	return SA.mendapatkan(b)
+@app.route('/scopus/ASubjarea<a>', methods=['GET'])
+def retrn(a):
+    return SA.mendapatkan(a)
