@@ -15,4 +15,5 @@ def hai(c):
     return c+ "hai"
 def yuhu(f):
     return f+ "yuhu"
+def qorygore(g+):
     
