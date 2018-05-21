@@ -23,3 +23,4 @@ def hom(abcd):
 
 
 #Masih bisa dibawahnya juga
+#ga ngerti aku
