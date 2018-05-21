@@ -1,5 +1,5 @@
 from flask import Flask,request
-from scopus import afiliasi as afl
+from scopus import afiliasi as afl #proses import file afiliasi.py dari folder scopus
 app = Flask(__name__)
 
 @app.route('/<gurih>')
