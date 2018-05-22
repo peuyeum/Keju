@@ -25,6 +25,14 @@
       }
     },
     {
+      "name": "Scopus",
+      "description": "Kelas 2B",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "http://api.elsevier.com"
+      }
+    },
+    {
       "name": "jurnal",
       "description": "Access to journal"
     },
@@ -193,6 +201,41 @@
           },
           "404": {
             "description": "Peneliti not found"
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/scopus/AUTHFIRST/{firstname}": {
+      "get": {
+        "tags": [
+          "Scopus"
+        ],
+        "summary": "Find Author by first name",
+        "description": "Return multiple author",
+        "operationId": "getAuthorByFirstName",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "firstname",
+            "in": "path",
+            "description": "author firstname to return",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "Author not found"
           }
         },
         "security": [
