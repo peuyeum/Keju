@@ -2,16 +2,10 @@
 from pyscopus import Scopus
 key = '1e499709c626679a80b27fc8a207ceb3'
 scopus = Scopus(key)
-
-#Test Search
-search_df = scopus.search("KEY(interdisciplinary collaboration)", count=30)
-#print (seaarch_df.head(10))
-
-#Test Search
-search_df = scopus.author("AUTHLASTNAME(scott)", count=2)
 def cari(nama):
-    return nama+"Pasti Bisa"  # untuk memanggil variable nama dengan menambah value pasti bisa
+    #search = scopus.search("KEY(interdisciplinary collaboration)", count=30)
+    search_au = scopus.search_author("AUTHLASTNAME(scott)")
+    #return print(search_df.head(10))
+    return print(search_au)
 
-# Test Search Author
 
-#Test Search Author
