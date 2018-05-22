@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/scopus/AUTHLASTNAME/<namabelakang>', methods=['GET'])
-def mencari(namabelakang):
-    return AN.pencarian(namabelakang)
+@app.route('/scopus/AUTHLASTNAME/<nama>', methods=['GET'])
+def mencari(nama):
+    return str(AN.pencarian(nama))
