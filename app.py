@@ -1,4 +1,5 @@
 from flask import Flask,request
+import jsonify
 from scopus import Authfirst as AUF #memberikan alias dari Autofirst dari package scopus
 app = Flask(__name__)
 
@@ -17,4 +18,4 @@ def login():
 
 @app.route('/scopus/AUTHFIRST/<nama>', methods=['GET'])
 def retrn(nama):
-    return AUF.cari(nama)
+    return str(AUF.cari(nama))
