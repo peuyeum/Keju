@@ -4,6 +4,6 @@ from pyscopus import Scopus
 key = '1e499709c626679a80b27fc8a207ceb3'
 scopus = Scopus(key)
 def cari(nama):
-    search_df = scopus.search("AUTHLASTNAME(" + nama + ")", count=10)
+    search_df = scopus.search("AUTHFIRST("+nama+")", count=10)
     return search_df.head(10)
 
