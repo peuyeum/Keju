@@ -16,5 +16,5 @@ def login():
 	return request.form['anu']
 
 @app.route('/scopus/ASubjarea<a>', methods=['GET'])
-def retrn(a):
+def return(a):
     return SA.mendapatkan(a)
