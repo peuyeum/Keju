@@ -1,4 +1,5 @@
-from flask import Flask,request
+from flask import Flask,request,json, jsonify
+from scopus import Firstauth as FA
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -13,3 +14,7 @@ def show_post(post_id):
 @app.route('/crot', methods=['POST'])
 def login():
 	return request.form['anu']
+
+@app.route('/scopus/FIRSTAUTH/<a>', methods=['GET'])
+def house(a):
+    return str(FA.rumah(a))
