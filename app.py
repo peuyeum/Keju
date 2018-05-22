@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/scopus/Subjarea<a>', methods=['GET'])
-def return(a):
-    return SA.mendapatkan(a)
+@app.route('/scopus/Subjarea/<area>', methods=['GET']) 
+def return(area): 
+    return SA.cari(area)
