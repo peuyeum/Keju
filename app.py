@@ -1,5 +1,5 @@
 from flask import Flask,request
-from scopus import afiliasi as afl #proses import file afiliasi.py dari folder scopus
+from scopus import Affil as AF
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -15,6 +15,6 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/scopus/AFFIL/<a>', methods=['GET']) #penggunaan method GET untuk menampilkan data dalam bentuk tag HTML
-def home(a):
-	return afl.hom(a)
+@app.route('/scopus/AFFIL/<name>', methods=['GET']) #penggunaan method GET untuk menampilkan data dalam bentuk tag HTML
+def home(name):
+	return str(AF.cari(name))
