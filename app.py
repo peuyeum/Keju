@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,jsonify
 from scopus import Firstauth as FA
 app = Flask(__name__)
 
@@ -17,4 +17,4 @@ def login():
 
 @app.route('/scopus/FIRSTAUTH/<a>', methods=['GET'])
 def house(a):
-    return FA.home(a)
+    return FA.rumah(a)
