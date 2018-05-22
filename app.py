@@ -16,5 +16,5 @@ def login():
 	return request.form['anu']
 
 @app.route('/scopus/Subjarea/<area>', methods=['GET']) 
-def return(area): 
-    return SA.cari(area)
+def retrn(area): 
+    return str(SA.cari(area))
